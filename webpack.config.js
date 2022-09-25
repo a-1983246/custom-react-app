@@ -1,12 +1,15 @@
+// @ts-ignore
 const path = require("path");
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/Index.tsx",
   output: {
+    // @ts-ignore
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js",
   },
   devServer: {
     static: {
+      // @ts-ignore
       directory: path.resolve(__dirname, "./dist"),
     },
   },
@@ -14,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js)x?$/,
+        test: /\.((j|t)s)x?$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
@@ -23,6 +26,6 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".jsx", ".js"],
+    extensions: [".tsx", ".ts", ".jsx", ".js"],
   },
 };

@@ -10,3 +10,15 @@
       - @babel/core
       - `babel.config.json`
         - @babel/preset-react
+
+## typescript + babel
+
+- capabilities
+  - tsc: can transpile & can type check
+  - babel: can transple
+- choice
+  - type check: tsc
+  - transpile: babel
+    - reason:
+      - babel has more flexibility than tsc
+      - responsbility is clear

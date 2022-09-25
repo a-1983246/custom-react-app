@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // Babel does transpiling so tsc need not do it
+    "target": "ESNext",
+    "module": "umd",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "jsx": "react",
+    // Babel does transpiling so tsc need not do it
+    "noEmit": true,
+    "sourceMap": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src"
+  ]
+}
