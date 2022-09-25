@@ -23,6 +23,12 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.css$/i,
+        // @ts-ignore
+        include: path.resolve(__dirname, "src"),
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
     ],
   },
   resolve: {

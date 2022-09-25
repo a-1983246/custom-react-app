@@ -1,3 +1,9 @@
 {
-  "js/ts.implicitProjectConfig.checkJs": true
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
