@@ -1,5 +1,13 @@
 # custom-react-app
 
+uses
+
+- typescript
+- webpack
+- babel
+- react
+- tailwindcss
+
 ## who calls whom
 
 - webpack-cli
